@@ -4,8 +4,11 @@
 # - clang/clang++
 # - emcc/em++ (Emscripten)
 
+cd "$(dirname "$0")"
+
 rm -rf ./*/ install/
 
 bpkg create -d ./wasm cc --options-file config-wasm.options
 bpkg create -d ./gcc cc --options-file config-gcc.options
 bpkg create -d ./clang cc --options-file config-clang.options
+
