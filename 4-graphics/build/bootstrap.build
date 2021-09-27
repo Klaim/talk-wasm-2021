@@ -1,0 +1,7 @@
+project = graphics
+
+using version
+using config
+using test
+using install
+using dist

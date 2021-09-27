@@ -5,3 +5,9 @@ config.cxx.std=20
 
 config.install.root = install/clang/
 
+config.cc.poptions += -I $getenv("PWD")/sdl/install/include -DSDL_main=main
+config.cc.loptions += -L $getenv("PWD")/sdl/install/lib
+config.cc.libs += -ldl -pthread
+
+-- "?sys:sdl2/*"
+

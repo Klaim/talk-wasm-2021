@@ -1,0 +1,15 @@
+: 1
+name: graphics
+version: 0.1.0-a.0.z
+project: talk-wasm-2021
+summary: graphics C++ executable
+license: other: proprietary ; Not free/open source.
+description-file: README.md
+url: https://example.org/talk-wasm-2021
+email: joel@jellynote.com
+#build-error-email: joel@jellynote.com
+builds: host : &default
+depends: * build2 >= 0.13.0
+depends: * bpkg >= 0.13.0
+
+depends: sdl2 ^2.0.0

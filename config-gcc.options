@@ -1,6 +1,13 @@
 config.cxx = g++
 config.c = gcc
 
-config.cxx.std=20
+config.cxx.std = 20
+
+config.cc.poptions += -I $getenv("PWD")/sdl/install/include -DSDL_main=main
+config.cc.loptions += -L $getenv("PWD")/sdl/install/lib
+config.cc.libs += -ldl -pthread
 
 config.install.root = install/gcc/
+
+-- "?sys:sdl2/*"
+
