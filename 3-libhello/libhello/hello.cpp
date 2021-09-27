@@ -1,6 +1,6 @@
 #include <libhello/hello.hpp>
 
-#include <iostream>
+#include <ostream>
 #include <sstream>
 #include <stdexcept>
 
@@ -18,13 +18,6 @@ namespace hello
     }
 
     fmt::print(o, "Hello, {}!\n", name);
-  }
-
-  void say_hello_log(const std::string& name)
-  {
-    std::ostringstream stream;
-    say_hello(stream, name);
-    fmt::print("{}", stream.str());
   }
 
 }

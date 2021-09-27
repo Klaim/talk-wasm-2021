@@ -12,7 +12,4 @@ namespace hello
   //
   LIBHELLO_SYMEXPORT
   void say_hello(std::ostream&, const std::string& name);
-
-  LIBHELLO_SYMEXPORT
-  void say_hello_log(const std::string& name);
 }
