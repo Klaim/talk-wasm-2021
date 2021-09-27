@@ -2,5 +2,8 @@ libs =
 import libs += fmt%lib{fmt} libboost-container%lib{boost_container}
 
 exe{myhello}: {hxx ixx txx cxx}{**} $libs testscript
+exe{myhello}: file{index.html}
 
 cxx.poptions =+ "-I$out_root" "-I$src_root"
+
+file{*}: install = bin/

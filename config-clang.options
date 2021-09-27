@@ -2,3 +2,6 @@ config.cxx = clang++
 config.c = clang
 
 config.cxx.std=20
+
+config.install.root = install/clang/
+

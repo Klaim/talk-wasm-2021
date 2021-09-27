@@ -1,3 +1,9 @@
 
 *.wasm
 *.js
+
+/build-*/
+
+.bdep/
+
+/install/
