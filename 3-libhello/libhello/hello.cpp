@@ -13,8 +13,9 @@ namespace hello
 {
   void say_hello(std::ostream& o, const std::string& name)
   {
-    if (name.empty())
+    if (name.empty()) {
       throw std::invalid_argument("empty name");
+    }
 
     fmt::print(o, "Hello, {}!\n", name);
   }
