@@ -12,3 +12,9 @@ or make an html:
     <script src="hello.js"></script>
 </html>
 ```
+
+Alternatively:
+```
+em++ hello.cpp -o hello.html
+emrun hello.html --browser chromium
+```
